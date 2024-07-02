@@ -1,3 +1,3 @@
-<header>
-    <a href="{{ route('home') }}">Home</a>
+<header class="container my-5">
+    <h1>Laravel-Controller Movies</h1>
 </header>

@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\Guest\MovieController;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $dati = config("data");
-    return view('home', $dati);
-})->name("home");
+Route::get('/', [MovieController::class, "home"])->name("home");
